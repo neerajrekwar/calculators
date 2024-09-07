@@ -1,11 +1,10 @@
-import { BackgroundBeamsWithCollisionDemo } from "../@/components/backBeamsWithcoll";
-
 export default function Home() {
   return (
     <main>
-      <section id="home" className="min-h-screen text-tPrimary bg-secondary">
-        <BackgroundBeamsWithCollisionDemo />
-      </section>
+      <section
+        id="home"
+        className="min-h-screen text-tPrimary bg-secondary"
+      ></section>
 
       <section id="about">
         <h2>About Us</h2>

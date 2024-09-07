@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-primary text-tPrimary">
+    <header className="w-full bg-tPrimary text-tPrimary">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           wellit
