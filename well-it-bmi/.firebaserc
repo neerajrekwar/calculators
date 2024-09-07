@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "well-it-bmi",
+    "staging": "well-it-bmi",
+    ",": "well-it-bmi"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

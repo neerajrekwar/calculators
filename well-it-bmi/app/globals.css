@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://coolors.co/32373b-4a5859-f4d6cc-f4b860-c83e4d */
+
+:root {
+  --bg-primary: #f4b860;
+  --bg-secondary: #fff1d9;
+  --bg-third: #2cffbf;
+  --text-primary: #32373b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #32373b;
+    --color-secondary: #c83e4d;
+    --color-third: #2cffbf;
+    --text-primary: #f4d6cc;
+  }
+}
