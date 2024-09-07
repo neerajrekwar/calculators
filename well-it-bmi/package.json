@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.14.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "firebase": "^10.13.1",
@@ -24,7 +26,6 @@
     "@types/node": "^20.16.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "18.2.18",
-    "@types/tailwindcss": "^3.1.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.1.1",
     "postcss": "^8.4.45",

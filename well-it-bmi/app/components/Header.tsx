@@ -11,30 +11,30 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-tPrimary text-tPrimary">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="w-full bg-primary text-tPrimary">
+      <nav className="container mx-auto px-4 py-4  flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           wellit
         </Link>
 
         {/* Hamburger Icon for small screens */}
-        <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+        <button onClick={toggleMenu} className="md:hidden text-primary focus:outline-none">
           <motion.div
             animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            className="w-8 h-0.5 bg-white mb-1"
+            className="w-6 h-0.5 bg-tPrimary mb-1"
           />
           <motion.div
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-8 h-0.5 bg-white mb-1"
+            className="w-6 h-0.5 bg-tPrimary mb-1"
           />
           <motion.div
             animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-            className="w-8 h-0.5 bg-white"
+            className="w-6 h-0.5 bg-tPrimary"
           />
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex font-semibold space-x-8">
           <Link href="/bmi" className="hover:text-gray-400">
             Home
           </Link>
@@ -61,14 +61,14 @@ const Header = () => {
               className="hover:text-gray-400"
               onClick={toggleMenu}
             >
-              About
+             Health
             </Link>
             <Link
               href="/contact"
               className="hover:text-gray-400"
               onClick={toggleMenu}
             >
-              Contact
+              Research
             </Link>
           </motion.div>
         )}
