@@ -6,16 +6,20 @@
 
 :root {
   --bg-primary: #f4b860;
-  --bg-secondary: #fff1d9;
-  --bg-third: #2cffbf;
+  --bg-secondary: #c83e4d;
+  --bg-third: #fffaf3;
   --text-primary: #32373b;
+  --text-secondary: #fffaf3;
+  --text-secondary: #4a58598c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #32373b;
-    --color-secondary: #c83e4d;
-    --color-third: #2cffbf;
-    --text-primary: #f4d6cc;
+    --bg-primary: #c83e4d;
+    --bg-secondary: #4a5859;
+    --bg-third: #fffaf3;
+    --text-primary: #f4b860;
+    --text-secondary: #32373b;
+    --text-secondary: #32373b8c;
   }
 }
