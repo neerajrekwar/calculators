@@ -4,7 +4,16 @@
     "staging": "well-it-bmi",
     ",": "well-it-bmi"
   },
-  "targets": {},
+  "targets": {
+    "bmi-ne": {
+      "hosting": {
+        "well-it-bmi": [
+          "well-it-bmi"
+          "welllite"
+        ]
+      }
+    }
+  },
   "etags": {},
   "dataconnectEmulatorConfig": {}
 }

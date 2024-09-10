@@ -5,21 +5,33 @@
 /* https://coolors.co/32373b-4a5859-f4d6cc-f4b860-c83e4d */
 
 :root {
-  --bg-primary: #f4b860;
-  --bg-secondary: #c83e4d;
-  --bg-third: #fffaf3;
+  /* light demo */
+  /* --bg-primary: #ffffff;
+  --bg-secondary: #f4cd6018;
+  --bg-accent: #cc7a00;
   --text-primary: #32373b;
-  --text-secondary: #fffaf3;
-  --text-secondary: #4a58598c;
+  --text-secondary: #4a5859; */
+
+  /* dark demo */
+  --bg-primary: #32373b;
+  --bg-secondary: #f4cd6018;
+  --bg-accent: #cc7a00;
+  --text-primary: #98a6b3;
+  --text-secondary: #4a5859;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: #c83e4d;
-    --bg-secondary: #4a5859;
-    --bg-third: #fffaf3;
-    --text-primary: #f4b860;
-    --text-secondary: #32373b;
-    --text-secondary: #32373b8c;
+    --bg-primary: #32373b;
+    --bg-secondary: #f4cd6018;
+    --bg-accent: #cc7a00;
+    --text-primary: #98a6b3;
+    --text-secondary: #4a5859;
+
+    /* --bg-primary: #ffffff;
+    --bg-secondary: #f4cd6018;
+    --bg-accent: #cc7a00;
+    --text-primary: #32373b;
+    --text-secondary: #4a5859; */
   }
 }

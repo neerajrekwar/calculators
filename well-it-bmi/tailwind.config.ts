@@ -19,7 +19,10 @@ module.exports = {
       colors: {
         primary: "var(--bg-primary)",
         secondary: "var(--bg-secondary)",
-        third: "var(--bg-third)",
+        accent: "var(--bg-accent)",
+        fourth: "var(--bg-fourth)",
+        fifth: "var(--bg-fifth)",
+        sixth: "var(--bg-sixth)",
         tP: "var(--text-primary)",
         tS: "var(--text-secondary)",
         tTh: "var(--text-third)",

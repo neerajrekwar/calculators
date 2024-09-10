@@ -1,7 +1,7 @@
 {
   "hosting": {
     "source": ".",
-    "site": "well-it-bmi",
+    "site": "welllite",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "frameworksBackend": {
       "region": "asia-east1"

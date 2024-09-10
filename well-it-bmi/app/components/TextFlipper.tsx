@@ -2,7 +2,13 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { Alata } from "next/font/google";
 import { useState, useEffect } from "react";
+
+const alata = Alata({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const TextFlipper = () => {
   const [isBMI, setIsBMI] = useState(false);
@@ -28,20 +34,22 @@ const TextFlipper = () => {
   }, [stopFlipping]);
 
   return (
-    <div className="relative text-tP flex items-end justify-end border-primary  text-4xl">
-      <div className="inline-flex overflow-hidden z-999">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={stopFlipping ? "final" : isBMI ? "BMI" : "wellit!"}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ delay: 1, ease: "easeIn" }}
-            className="inline-block  text-3xl md:text-4xl lg:text-7xl"
-          >
-            {stopFlipping ? "BMI" : isBMI ? "BMI" : "wellit!"}
-          </motion.div>
-        </AnimatePresence>
+    <div className={alata.className}>
+      <div className="relative text-tP  bg-fourth px-2 rounded-md flex items-end justify-end border-primary  text-4xl">
+        <div className="inline-flex overflow-hidden  z-999">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={stopFlipping ? "final" : isBMI ? "BMI" : "wellit!"}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ delay: 1, ease: "easeIn" }}
+              className="inline-block  text-3xl md:text-4xl  lg:text-7xl"
+            >
+              {stopFlipping ? "BMI?" : isBMI ? "BMI" : "wellite!"}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   );
