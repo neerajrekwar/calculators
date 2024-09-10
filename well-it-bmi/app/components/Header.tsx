@@ -17,11 +17,11 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-secondary text-tP">
+    <header className="w-full  text-accent ">
       <nav className="container mx-auto px-4 py-4  z-50 flex justify-between items-center">
         <div className={alata.className}>
           <Link href="/" className="z-50 text-2xl font-semibold">
-            wellite
+            <span>w</span>ellite
           </Link>
         </div>
         {/* Hamburger Icon for small screens */}
@@ -31,15 +31,15 @@ const Header = () => {
         >
           <motion.div
             animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            className="w-6 h-0.5 z-50 text-tP bg-primary mb-1"
+            className="w-6 h-0.5 z-50 text-tP  bg-accent mb-1"
           />
           <motion.div
             animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-6 h-0.5 z-50 bg-primary mb-1"
+            className="w-6 h-0.5 z-50 bg-accent mb-1"
           />
           <motion.div
             animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-            className="w-6 h-0.5 z-50 bg-primary"
+            className="w-6 h-0.5 z-50 bg-accent"
           />
         </button>
 
@@ -61,7 +61,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
-            className="md:hidden z-50 absolute top-16 left-0 w-full  flex flex-col items-center space-y-4 p-4"
+            className="md:hidden z-50 backdrop-blur-sm bg-secondary absolute top-16 left-0 w-full  flex flex-col items-center space-y-4 p-4"
           >
             <Link href="/" className="hover:text-tS" onClick={toggleMenu}>
               Home

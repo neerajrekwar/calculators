@@ -6,27 +6,27 @@
 
 :root {
   /* light demo */
-  /* --bg-primary: #ffffff;
+  --bg-primary: #ffffff;
   --bg-secondary: #f4cd6018;
-  --bg-accent: #cc7a00;
+  --bg-accent: #f4b860;
   --text-primary: #32373b;
-  --text-secondary: #4a5859; */
+  --text-secondary: #4a5859;
 
   /* dark demo */
-  --bg-primary: #32373b;
+  /* --bg-primary: #32373b;
   --bg-secondary: #f4cd6018;
   --bg-accent: #cc7a00;
   --text-primary: #98a6b3;
-  --text-secondary: #4a5859;
+  --text-secondary: #4a5859; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-primary: #32373b;
     --bg-secondary: #f4cd6018;
-    --bg-accent: #cc7a00;
-    --text-primary: #98a6b3;
-    --text-secondary: #4a5859;
+    --bg-accent: #f4b860;
+    --text-primary: #ffd695;
+    --text-secondary: #778c8d;
 
     /* --bg-primary: #ffffff;
     --bg-secondary: #f4cd6018;
@@ -34,4 +34,8 @@
     --text-primary: #32373b;
     --text-secondary: #4a5859; */
   }
+}
+
+body {
+  background-color: var(--bg-primary);
 }
