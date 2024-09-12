@@ -17,10 +17,10 @@ export function BackgroundLinesDemo() {
         Get the best advices from our experts, including expert artists,
         painters, marathon enthusiasts and RDX, totally free.
       </p>
-      <div className="z-50 mt-8 md:my-16">
+      <div className="z-40 mt-8 md:my-16">
         <Link
           href={"/bmi"}
-          className="text-lg p-2 px-3 text-tTh h-6 rounded-full bg-accent "
+          className="text-base md:text-lg p-2 px-3 text-tTh h-6 rounded-full bg-accent g"
         >
           find it
         </Link>

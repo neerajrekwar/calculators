@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full  text-accent ">
+    <header className="w-full  text-tp  ">
       <nav className="container mx-auto px-4 py-4  z-50 flex justify-between items-center">
         <div className={alata.className}>
           <Link href="/" className="z-50 text-2xl font-semibold">
@@ -49,10 +49,10 @@ const Header = () => {
             Home
           </Link>
           <Link href="/about" className="hover:text-tS">
-            BMI Chart
+            BMI chart
           </Link>
           <Link href="/contact" className="hover:text-tS">
-            Healthy tips
+            blog
           </Link>
         </div>
 
@@ -61,20 +61,20 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
-            className="md:hidden z-50 backdrop-blur-sm bg-secondary absolute top-16 left-0 w-full  flex flex-col items-center space-y-4 p-4"
+            className="md:hidden z-50 backdrop-blur-sm min-h-screen bg-primary absolute top-16 left-0 w-full  flex flex-col  space-y-4 p-4"
           >
             <Link href="/" className="hover:text-tS" onClick={toggleMenu}>
               Home
             </Link>
             <Link href="/about" className="hover:text-tS" onClick={toggleMenu}>
-              Health
+              BMI chart
             </Link>
             <Link
               href="/contact"
               className="hover:text-tS"
               onClick={toggleMenu}
             >
-              Research
+              blog
             </Link>
           </motion.div>
         )}
