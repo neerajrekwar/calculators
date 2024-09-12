@@ -20,7 +20,7 @@ export function BackgroundLinesDemo() {
       <div className="z-40 mt-8 md:my-16">
         <Link
           href={"/bmi"}
-          className="text-base md:text-lg p-2 px-3 text-tTh h-6 rounded-full bg-accent "
+          className="text-base md:text-lg p-2 px-3 text-tTh h-6 rounded-full bg-accent g"
         >
           find it
         </Link>
