@@ -1,19 +1,15 @@
 {
   "projects": {
-    "default": "well-it-bmi",
-    "staging": "well-it-bmi",
-    ",": "well-it-bmi"
+    "nd": "bmi-ne"
   },
   "targets": {
     "bmi-ne": {
       "hosting": {
         "well-it-bmi": [
-          "well-it-bmi"
           "welllite"
         ]
       }
     }
   },
-  "etags": {},
-  "dataconnectEmulatorConfig": {}
+  "etags": {}
 }

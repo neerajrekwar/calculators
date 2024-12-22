@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BackgroundLinesDemo } from "./components/BackgroundLines";
+import { BackgroundLinesDemo } from "../components/BackgroundLines";
 import Image from "next/image";
 
 
