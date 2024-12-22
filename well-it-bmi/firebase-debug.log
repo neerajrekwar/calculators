@@ -1,0 +1,93 @@
+[debug] [2024-12-21T19:46:16.546Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T19:46:16.549Z] Command:       /usr/local/share/nvm/versions/node/v20.18.1/bin/node /home/codespace/nvm/current/bin/firebase deploy --only hosting:welllite
+[debug] [2024-12-21T19:46:16.550Z] CLI Version:   13.29.1
+[debug] [2024-12-21T19:46:16.550Z] Platform:      linux
+[debug] [2024-12-21T19:46:16.550Z] Node Version:  v20.18.1
+[debug] [2024-12-21T19:46:16.550Z] Time:          Sat Dec 21 2024 19:46:16 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-12-21T19:46:16.550Z] Env Overrides: GITHUB_API_URL, GITHUB_API_URL
+[debug] [2024-12-21T19:46:16.551Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T19:46:16.649Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T19:46:16.649Z] > authorizing via signed-in user (neerajrekwar817@gmail.com)
+[debug] [2024-12-21T19:46:16.649Z] [iam] checking project bmi-ne for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T19:46:16.650Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:16.650Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:16.651Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bmi-ne:testIamPermissions [none]
+[debug] [2024-12-21T19:46:16.651Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bmi-ne:testIamPermissions x-goog-quota-user=projects/bmi-ne
+[debug] [2024-12-21T19:46:16.651Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bmi-ne:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T19:46:17.017Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bmi-ne:testIamPermissions 200
+[debug] [2024-12-21T19:46:17.017Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bmi-ne:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T19:46:17.017Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:17.017Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:17.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne [none]
+[debug] [2024-12-21T19:46:17.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne 200
+[debug] [2024-12-21T19:46:17.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne {"projectId":"bmi-ne","projectNumber":"654057701650","displayName":"nextJS-bmi-calculator","name":"projects/bmi-ne","resources":{"hostingSite":"bmi-ne"},"state":"ACTIVE","etag":"1_74583d6d-d6d0-4d4b-b843-2b56e32e7585"}
+[debug] [2024-12-21T19:46:18.664Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:18.664Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:18.664Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites pageToken=&pageSize=10
+[debug] [2024-12-21T19:46:19.734Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites 200
+[debug] [2024-12-21T19:46:19.735Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites {"sites":[{"name":"projects/bmi-ne/sites/bmi-ne","defaultUrl":"https://bmi-ne.web.app","appId":"1:654057701650:web:63b949896e571aa57bb3cb","type":"DEFAULT_SITE"},{"name":"projects/bmi-ne/sites/welllite","defaultUrl":"https://welllite.web.app","type":"USER_SITE"}]}
+[debug] [2024-12-21T19:46:19.735Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:19.735Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:19.735Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites 
+[debug] [2024-12-21T19:46:20.198Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites 200
+[debug] [2024-12-21T19:46:20.199Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites {"sites":[{"name":"projects/bmi-ne/sites/bmi-ne","defaultUrl":"https://bmi-ne.web.app","appId":"1:654057701650:web:63b949896e571aa57bb3cb","type":"DEFAULT_SITE"},{"name":"projects/bmi-ne/sites/welllite","defaultUrl":"https://welllite.web.app","type":"USER_SITE"}]}
+[debug] [2024-12-21T19:46:20.199Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:20.199Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:20.199Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne/webApps/1:654057701650:web:63b949896e571aa57bb3cb/config [none]
+[debug] [2024-12-21T19:46:21.211Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne/webApps/1:654057701650:web:63b949896e571aa57bb3cb/config 200
+[debug] [2024-12-21T19:46:21.212Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bmi-ne/webApps/1:654057701650:web:63b949896e571aa57bb3cb/config {"projectId":"bmi-ne","appId":"1:654057701650:web:63b949896e571aa57bb3cb","storageBucket":"bmi-ne.firebasestorage.app","apiKey":"AIzaSyCTPKbf5DwvQBiaZ7cNEQjvKK--4DehtFE","authDomain":"bmi-ne.firebaseapp.com","messagingSenderId":"654057701650","measurementId":"G-LZQE7YBD3L"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T19:46:23.982Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:23.982Z] Checked if tokens are valid: true, expires at: 1734813147407
+[debug] [2024-12-21T19:46:23.982Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites/bmi-ne [none]
+[debug] [2024-12-21T19:46:24.378Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites/bmi-ne 200
+[debug] [2024-12-21T19:46:24.378Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bmi-ne/sites/bmi-ne {"name":"projects/bmi-ne/sites/bmi-ne","defaultUrl":"https://bmi-ne.web.app","appId":"1:654057701650:web:63b949896e571aa57bb3cb","type":"DEFAULT_SITE"}
+[info] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+
+[info] This information is used to shape Next.js' roadmap and prioritize features.
+
+[info] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+./app/layout.tsx
+Module not found: Can't resolve './components/Footer'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/layout.tsx
+Module not found: Can't resolve './components/Header'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/page.tsx
+Module not found: Can't resolve './components/BackgroundLines'
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2024-12-21T19:46:33.366Z] Error: ENOENT: no such file or directory, open '/workspaces/calculators/well-it-bmi/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.

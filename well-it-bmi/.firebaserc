@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "nd": "bmi-ne"
+  },
+  "targets": {
+    "bmi-ne": {
+      "hosting": {
+        "well-it-bmi": [
+          "welllite"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
